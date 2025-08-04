@@ -41,23 +41,35 @@ export const skills = [
 
 export const experiences = [
   {
-    role: "Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
+    role: "Internship",
+    company: "Nobel Learning PBC",
+    period: "90 hours",
     responsibilities: [
-      "Developed and maintained web applications using MERN stack",
-      "Implemented RESTful APIs with Node.js and Express",
-      "Collaborated with team using Git and Agile methodologies",
+      "engaged in practical web projects, pitch presentations, and team-based assignments",
     ],
   },
   {
-    role: "Frontend Developer",
-    company: "Digital Creations",
-    period: "2020 - 2022",
+    role: "Web Development Trainer",
+    company: "PI Educational World",
+    period: "4 months",
     responsibilities: [
-      "Built responsive UIs with React and Redux",
-      "Optimized application performance",
-      "Worked with designers to implement UI/UX",
+      "Teaching SEE Graduates about Web Development",
+      "Also taught them about Git and GitHub",
+      "Assisted in building their portfolio websites",
+      "Guided them in using MS Office and Google Workspace for documentation and presentations",
+    ],
+  },
+  {
+    role: "Computer Instructor",
+    company: "Himchuli Academy",
+    period: "8 months",
+    responsibilities: [
+      "Teaching Secondary Level Students about Computer Science",
+      "Also taught them about Git and GitHub",
+      "Assisted in building their portfolio websites",
+      "Guided them in using MS Office and Google Workspace for documentation and presentations",
+      "Taught them about basic HTML, CSS, and JavaScript",
+      "Also taught them Mathematics and Optional Mathematics",
     ],
   },
 ];

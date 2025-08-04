@@ -4,7 +4,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaYoutube,
-  FaEnvelope,
+  FaInstagram,
   FaChevronDown,
 } from "react-icons/fa";
 import { SiLeetcode, SiCodepen } from "react-icons/si";
@@ -137,7 +137,7 @@ const LandingPage = ({ darkMode }) => {
             href="mailto:suzanyba079@gmail.com"
             className="text-2xl hover:text-blue-500 transition"
           >
-            <FaEnvelope />
+            <FaInstagram />
           </a>
         </motion.div>
 

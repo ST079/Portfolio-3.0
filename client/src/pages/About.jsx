@@ -19,14 +19,7 @@ const About = ({ darkMode }) => {
         "Learned algorithms, data structures, and software engineering principles",
       icon: <FaGraduationCap className="text-green-500" />,
     },
-    {
-      id: 3,
-      title: "Frontend Developer @TechCo",
-      date: "2021-Present",
-      description:
-        "Building React applications and contributing to open source",
-      icon: <FaBriefcase className="text-purple-500" />,
-    },
+  
   ];
 
   return (
