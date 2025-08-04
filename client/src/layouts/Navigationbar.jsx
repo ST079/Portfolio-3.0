@@ -1,0 +1,72 @@
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
+
+const Navigationbar = () => {
+  const { pathname } = useLocation();
+  
+  return (
+    <div>
+      <nav aria-label="breadcrumb">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link
+              to="/"
+              className={`text-decoration-none text-dark ${
+                pathname === "/" ? "active" : ""
+              }`}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="breadcrumb-item ">
+            <Link
+              to="/about"
+              className={`text-decoration-none text-dark ${
+                pathname === "/about" ? "active" : ""
+              }`}
+            >
+              About
+            </Link>
+          </li>
+
+          <li className="breadcrumb-item ">
+            <Link
+              to="/experience"
+              className={`text-decoration-none text-dark ${
+                pathname === "/experience" ? "active" : ""
+              }`}
+            >
+              Experience
+            </Link>
+          </li>
+
+          <li className="breadcrumb-item ">
+            <Link
+              to="/projects"
+              className={`text-decoration-none text-dark ${
+                pathname === "/projects" ? "active" : ""
+              }`}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="breadcrumb-item ">
+            <Link
+              to="/contact"
+              className={`text-decoration-none text-dark ${
+                pathname === "/contact" ? "active" : ""
+              }`}
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="breadcrumb-item active" aria-current="page">
+            SuZanYba
+          </li>
+        </ol>
+      </nav>
+    </div>
+  );
+}
+
+export default Navigationbar
