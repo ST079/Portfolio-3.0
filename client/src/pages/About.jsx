@@ -7,14 +7,14 @@ const About = ({ darkMode }) => {
     {
       id: 1,
       title: "Started Coding",
-      date: "2018",
+      date: "2021",
       description: "Built first HTML/CSS websites",
       icon: <FaCode className="text-blue-500" />,
     },
     {
       id: 2,
-      title: "Computer Science Degree",
-      date: "2019-2022",
+      title: "Bachelor's Degree in Computer Application",
+      date: "2023 - Present",
       description:
         "Learned algorithms, data structures, and software engineering principles",
       icon: <FaGraduationCap className="text-green-500" />,

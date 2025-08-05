@@ -9,9 +9,11 @@ import {
 } from "react-icons/fa";
 import { SiLeetcode, SiCodepen } from "react-icons/si";
 import ThemeToogle from "../components/ThemeToogle";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LandingPage = ({ darkMode }) => {
+
+  const navigate = useNavigate();
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -21,7 +23,7 @@ const LandingPage = ({ darkMode }) => {
       id="home"
       className={`min-h-screen flex flex-col justify-center items-center`}
     >
-      <ThemeToogle/>
+      <ThemeToogle />
       {/* Terminal-like header */}
       <div
         className={`w-full max-w-4xl p-4 rounded-t-lg ${
@@ -110,14 +112,15 @@ const LandingPage = ({ darkMode }) => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="https://www.youtube.com/@SuZan_Yba"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl hover:text-blue-500 transition"
           >
             <FaYoutube />
           </a>
-          <a
+          
+          {/* <a
             href="https://leetcode.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
@@ -125,16 +128,19 @@ const LandingPage = ({ darkMode }) => {
           >
             <SiLeetcode />
           </a>
-          <a
+           */}
+
+          {/* <a
             href="https://codepen.io/yourusername"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl hover:text-blue-500 transition"
           >
             <SiCodepen />
-          </a>
+          </a> */}
+
           <a
-            href="mailto:suzanyba079@gmail.com"
+            href="https://www.youtube.com/@SuZan_Yba"
             className="text-2xl hover:text-blue-500 transition"
           >
             <FaInstagram />
@@ -149,7 +155,7 @@ const LandingPage = ({ darkMode }) => {
           transition={{ delay: 0.7, duration: 0.8 }}
         >
           <button
-            onClick={() => scrollToSection("projects")}
+            onClick={() => navigate("/projects")}
             className={`px-8 py-3 rounded-lg font-mono font-bold transition ${
               darkMode
                 ? "bg-blue-600 hover:bg-blue-700"
@@ -159,7 +165,7 @@ const LandingPage = ({ darkMode }) => {
             View My Work
           </button>
           <button
-            onClick={() => scrollToSection("contact")}
+            onClick={() => navigate("/contact")}
             className={`px-8 py-3 rounded-lg font-mono font-bold border-2 ${
               darkMode
                 ? "border-blue-500 text-blue-400 hover:bg-gray-700"
@@ -217,15 +223,15 @@ const LandingPage = ({ darkMode }) => {
         transition={{ delay: 1.5, duration: 0.8 }}
       >
         <Link to={"/about"}>
-        <button
-          className={`p-2 rounded-full ${
-            darkMode
-              ? "text-gray-400 hover:text-white"
-              : "text-gray-600 hover:text-black"
-          }`}
-        >
-          <FaChevronDown size={24} />
-        </button>
+          <button
+            className={`p-2 rounded-full ${
+              darkMode
+                ? "text-gray-400 hover:text-white"
+                : "text-gray-600 hover:text-black"
+            }`}
+          >
+            <FaChevronDown size={24} />
+          </button>
         </Link>
       </motion.div>
     </section>

@@ -1,12 +1,29 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
+import "./Navigationbar.css";
 
 const Navigationbar = () => {
   const { pathname } = useLocation();
+
+
+    React.useEffect(() => {
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("slidedown", window.scrollY > 200);
+        navbar.classList.toggle("hide", window.scrollY > 1200);
+      });
+    }, []);
+
+
+   React.useEffect(() => {
+     if (pathname) {
+       window.scrollTo(0, 0);
+     }
+   }, [pathname]);
   
   return (
     <div>
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" className='navbar'>
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
             <Link
@@ -59,9 +76,6 @@ const Navigationbar = () => {
             >
               Contact
             </Link>
-          </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            SuZanYba
           </li>
         </ol>
       </nav>

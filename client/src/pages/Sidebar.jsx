@@ -65,19 +65,19 @@ const Sidebar = () => {
           </div>
 
           <div className="h-8 w-8 mx-2">
-            <Link to="" target="_blank">
+            <Link to="https://www.youtube.com/@SuZan_Yba" target="_blank">
               <img src="/socials/youtube.png" alt="yt" />{" "}
             </Link>
           </div>
 
           <div className="h-8 w-8 mx-2">
-            <Link to="" target="_blank">
+            <Link to="https://github.com/ST079" target="_blank">
               <img src="/socials/github.png" alt="yt" />{" "}
             </Link>
           </div>
 
           <div className="h-8 w-8 mx-2">
-            <Link to="" target="_blank">
+            <Link to="https://www.facebook.com/suzanyba082" target="_blank">
               <img src="/socials/facebook.png" alt="fb" />{" "}
             </Link>
           </div>

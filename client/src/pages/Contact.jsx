@@ -90,11 +90,12 @@ const Contact = ({ darkMode }) => {
 
           {submitted ? (
             <motion.div
-              className={`p-4 rounded-lg bg-green-500 text-white`}
+              className={`p-4 rounded-lg bg-red-500 text-white`}
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
             >
-              Thank you! Your message has been sent.
+              {/* Thank you! Your message has been sent. */}
+              Sorry Service Unavailable ! Comming Soon
             </motion.div>
           ) : (
             <form
