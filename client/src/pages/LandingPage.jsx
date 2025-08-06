@@ -10,6 +10,7 @@ import {
 import { SiLeetcode, SiCodepen } from "react-icons/si";
 import ThemeToogle from "../components/ThemeToogle";
 import { Link, useNavigate } from "react-router-dom";
+import YouTube from "./Youtube";
 
 const LandingPage = ({ darkMode }) => {
 
@@ -119,7 +120,7 @@ const LandingPage = ({ darkMode }) => {
           >
             <FaYoutube />
           </a>
-          
+
           {/* <a
             href="https://leetcode.com/yourusername"
             target="_blank"
@@ -214,26 +215,8 @@ const LandingPage = ({ darkMode }) => {
           </div>
         </motion.div>
       </div>
+      <YouTube darkMode={darkMode} />
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="mt-12 animate-bounce"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-      >
-        <Link to={"/about"}>
-          <button
-            className={`p-2 rounded-full ${
-              darkMode
-                ? "text-gray-400 hover:text-white"
-                : "text-gray-600 hover:text-black"
-            }`}
-          >
-            <FaChevronDown size={24} />
-          </button>
-        </Link>
-      </motion.div>
     </section>
   );
 };
