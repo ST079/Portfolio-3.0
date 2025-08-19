@@ -22,4 +22,15 @@ export const projectsData = [
     category: "frontend",
     imageUrl: "/projects/todolist.png",
   },
+  {
+    id: 2,
+    title: "Food Recipe App",
+    description:
+      "This is a Recipe App where use can login, share their recipes and can do CRUD operations.",
+    techStack: ["React", "Bootstrap", "NodeJs", "Express", "MongoDB"],
+    githubUrl: "https://github.com/ST079/Food-Recipe-App",
+    liveUrl: "https://food-recipe-app-blue-mu.vercel.app/",
+    category: "fullstack",
+    imageUrl: "/projects/Recipe.png",
+  },
 ];
