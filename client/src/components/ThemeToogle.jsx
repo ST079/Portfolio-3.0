@@ -11,7 +11,6 @@ const ThemeToogle = () => {
       >
         {darkMode ? "💻" : "⚜️"}
       </button>
-      ;
     </div>
   );
 }
