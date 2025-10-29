@@ -41,7 +41,7 @@ export const projectsData = [
     techStack: ["HTML", "CSS"],
     githubUrl: "https://github.com/ST079/Portfolio2.0.git",
     liveUrl: "https://portfolio2-0-lilac-psi.vercel.app/",
-    category: "Frontend",
+    category: "frontend",
     imageUrl: "/projects/portfolio.png",
   },
 ];
