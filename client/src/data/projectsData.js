@@ -1,7 +1,7 @@
 // src/data/projectsData.js
 export const projectsData = [
   {
-    id: 1,
+    id: 0,
     title: "School Website",
     description:
       "This is a school website (Himchuli Academy) built with React and Bootstrap. PHP is used for the backend.",
@@ -12,7 +12,7 @@ export const projectsData = [
     imageUrl: "/projects/himchuli.png",
   },
   {
-    id: 2,
+    id: 1,
     title: "To-do-List",
     description:
       "This is a simple to-do list application built with React. It allows users to add, delete, and mark tasks as completed.",
@@ -32,5 +32,16 @@ export const projectsData = [
     liveUrl: "https://food-recipe-app-blue-mu.vercel.app/",
     category: "fullstack",
     imageUrl: "/projects/Recipe.png",
+  },
+  {
+    id: 3,
+    title: "Portifolio Website",
+    description:
+      "This is a personal portfolio website built with HTML and CSS to showcase my projects and skills. It is not responsive for now.",
+    techStack: ["HTML", "CSS"],
+    githubUrl: "https://github.com/ST079/Portfolio2.0.git",
+    liveUrl: "https://portfolio2-0-lilac-psi.vercel.app/",
+    category: "Frontend",
+    imageUrl: "/projects/portfolio.png",
   },
 ];
