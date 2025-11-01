@@ -49,7 +49,7 @@ const Projects = ({ darkMode }) => {
 
       {/* Filter buttons */}
       <div className="mb-8 flex flex-wrap gap-2">
-        {["all", "frontend", "backend", "fullstack"].map((type) => (
+        {["all", "frontend", "backend", "fullstack","ongoing"].map((type) => (
           <button
             key={type}
             onClick={() => setFilter(type)}
@@ -76,7 +76,6 @@ const Projects = ({ darkMode }) => {
             <ProjectCard
               key={project.id}
               project={project}
-              darkMode={darkMode}
             />
           ))}
         </div>

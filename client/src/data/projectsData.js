@@ -44,4 +44,15 @@ export const projectsData = [
     category: "frontend",
     imageUrl: "/projects/portfolio.png",
   },
+  {
+    id: 4,
+    title: "Blog Management System",
+    description:
+      "A Blog Management System built with the MERN stack that allows users to create, edit, and manage blog posts efficiently. The system includes user authentication",
+    techStack: ["MongoDB", "Express", "React", "Node.js"],
+    githubUrl: "https://github.com/ST079/myBlog",
+    liveUrl: "",
+    category: "ongoing",
+    imageUrl: "/projects/BMS.png",
+  },
 ];

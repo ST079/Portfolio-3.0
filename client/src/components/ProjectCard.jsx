@@ -24,6 +24,7 @@ const ProjectCard = ({ project, darkMode }) => {
       </div>
 
       <div className="p-4">
+        <span class={`badge ${project.category==="ongoing"? "bg-danger" : "bg-success"}`}>{project.category}</span>
         <h3 className="text-xl font-bold font-mono mb-2">{project.title}</h3>
         <p className="mb-4">{project.description}</p>
 
@@ -49,7 +50,7 @@ const ProjectCard = ({ project, darkMode }) => {
           >
             <FaGithub className="mr-1" /> Code
           </a>
-          {project.liveUrl && (
+          {project.category==="ongoing"? "":project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
