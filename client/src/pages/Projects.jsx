@@ -35,9 +35,7 @@ const Projects = ({ darkMode }) => {
       : projects.filter((project) => project.category === filter);
 
   return (
-    <div
-     
-    >
+    <div>
       <motion.h1
         className="text-3xl font-bold mb-8 font-mono border-b-2 border-blue-500 pb-2"
         initial={{ opacity: 0 }}

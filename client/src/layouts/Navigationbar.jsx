@@ -64,6 +64,16 @@ const Navigationbar = () => {
               Contact
             </Link>
           </li>
+          <li className="breadcrumb-item ">
+            <Link
+              to="/certificate"
+              className={`text-decoration-none text-dark ${
+                pathname === "/certificate" ? "active" : ""
+              }`}
+            >
+              Certificate
+            </Link>
+          </li>
         </ol>
       </nav>
     </div>
