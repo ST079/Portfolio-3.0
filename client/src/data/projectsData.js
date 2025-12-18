@@ -29,7 +29,7 @@ export const projectsData = [
       "This is a Recipe App where use can login, share their recipes and can do CRUD operations.",
     techStack: ["React", "Bootstrap", "NodeJs", "Express", "MongoDB"],
     githubUrl: "https://github.com/ST079/Food-Recipe-App",
-    liveUrl: "https://food-recipe-app-blue-mu.vercel.app/",
+    liveUrl: "https://food-recipe-app-q7rt.vercel.app/",
     category: "fullstack",
     imageUrl: "/projects/Recipe.png",
   },
@@ -56,3 +56,4 @@ export const projectsData = [
     imageUrl: "/projects/BMS.png",
   },
 ];
+
