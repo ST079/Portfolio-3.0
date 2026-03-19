@@ -26,7 +26,11 @@ const ProjectCard = ({ project, darkMode }) => {
       <div className="p-4">
         <span class={`badge ${project.category==="ongoing"? "bg-danger" : "bg-success"}`}>{project.category}</span>
         <h3 className="text-xl font-bold font-mono mb-2">{project.title}</h3>
-        <p className="mb-4">{project.description}</p>
+        <p className="mb-4">
+  {project.description.length > 100
+    ? project.description.slice(0, 100) + "..."
+    : project.description}
+</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.techStack.map((tech, index) => (
