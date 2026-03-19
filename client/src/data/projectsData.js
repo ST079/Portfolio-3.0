@@ -62,9 +62,9 @@ export const projectsData = [
       "thriftZaar Nepal — your ultimate destination for stylish, affordable, and sustainable fashion. Explore our curated collection of pre-loved clothing, vintage gems, and trendy finds that give old outfits a fresh new life.",
     techStack: ["MySQL", "Bootstrap", "PHP", "HTML5","CSS"],
     githubUrl: "https://github.com/ST079/thriftzaar-nepal",
-    liveUrl: "http://thriftzaar-nepal.page.gd/?i=1",
+    liveUrl: "http://thriftzaar-nepal.page.gd/",
     category: "fullstack",
-    imageUrl: "/projects/thriftzaar.png",
+    imageUrl: "/projects/default.png",
   },
 ];
 
